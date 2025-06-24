@@ -21,8 +21,9 @@
         <div class="my-4">
             <article class="prose dark:prose-invert max-w-none leading-relaxed text-left">
                 <div x-data="{ expanded: false }" class="relative">
-                    <div x-show="!expanded" class="overflow-hidden" style="display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical;">
+                    <div x-show="!expanded" class="overflow-hidden relative" style="max-height: 15rem;">
                         {!! $product->description !!}
+                        <div class="absolute bottom-0 left-0 right-0 h-8 bg-gradient-to-t from-gray-900 to-transparent"></div>
                     </div>
                     <div x-show="expanded">
                         {!! $product->description !!}
