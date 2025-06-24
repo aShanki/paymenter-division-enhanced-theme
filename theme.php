@@ -1,0 +1,147 @@
+<?php
+
+return [
+    'name' => 'Division Enhanced',
+    'author' => 'Claude Code',
+    'url' => 'https://division-50s.pages.dev',
+
+    'settings' => [
+        [
+            'name' => 'direct_checkout',
+            'label' => 'Direct Checkout',
+            'type' => 'checkbox',
+            'default' => false,
+            'description' => 'Don\'t show the product overview page, go directly to the checkout page',
+        ],
+        [
+            'name' => 'small_images',
+            'label' => 'Small Images',
+            'type' => 'checkbox',
+            'default' => false,
+            'description' => 'Show small images in the product overview page',
+        ],
+        [
+            'name' => 'show_category_description',
+            'label' => 'Show Category Description',
+            'type' => 'checkbox',
+            'default' => true,
+            'description' => 'Show the category description in the product overview page/homepage',
+        ],
+        [
+            'name' => 'enhanced_descriptions',
+            'label' => 'Enhanced Description Handling',
+            'type' => 'checkbox',
+            'default' => true,
+            'description' => 'Enable enhanced description layouts with read more/less functionality for long descriptions',
+        ],
+        [
+            'name' => 'description_preview_length',
+            'label' => 'Description Preview Length',
+            'type' => 'number',
+            'default' => 150,
+            'description' => 'Number of characters to show in description preview before "read more" link',
+        ],
+        [
+            'name' => 'home_page_text',
+            'label' => 'Home Page Text',
+            'type' => 'markdown',
+            'default' => 'Welcome to Paymenter!',
+        ],
+        [
+            'name' => 'primary',
+            'label' => 'Primary - Brand Color (Light)',
+            'type' => 'color',
+            'default' => 'hsl(194, 100%, 60%)',
+        ],
+        [
+            'name' => 'secondary',
+            'label' => 'Secondary - Brand Color (Light)',
+            'type' => 'color',
+            'default' => 'hsl(199, 100%, 25%)',
+        ],
+        [
+            'name' => 'neutral',
+            'label' => 'Borders, Accents... (Light)',
+            'type' => 'color',
+            'default' => 'hsl(220, 25%, 85%)',
+        ],
+        [
+            'name' => 'base',
+            'label' => 'Base - Text Color (Light)',
+            'type' => 'color',
+            'default' => 'hsl(0, 0%, 0%)',
+        ],
+        [
+            'name' => 'muted',
+            'label' => 'Muted - Text Color (Light)',
+            'type' => 'color',
+            'default' => 'hsl(220, 28%, 25%)',
+        ],
+        [
+            'name' => 'inverted',
+            'label' => 'Inverted - Text Color (Light)',
+            'type' => 'color',
+            'default' => 'hsl(100, 100%, 100%)',
+        ],
+        [
+            'name' => 'background',
+            'label' => 'Background - Color (Light)',
+            'type' => 'color',
+            'default' => 'hsl(0, 0%, 5%)',
+        ],
+        [
+            'name' => 'background-secondary',
+            'label' => 'Background - Secondary Color (Light)',
+            'type' => 'color',
+            'default' => 'hsl(0, 0%, 10%)',
+        ],
+        [
+            'name' => 'dark-primary',
+            'label' => 'Primary - Brand Color (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(194, 100%, 60%)',
+        ],
+        [
+            'name' => 'dark-secondary',
+            'label' => 'Secondary - Brand Color (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(199, 100%, 25%)',
+        ],
+        [
+            'name' => 'dark-neutral',
+            'label' => 'Borders, Accents... (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(220, 25%, 29%)',
+        ],
+        [
+            'name' => 'dark-base',
+            'label' => 'Base - Text Color (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(100, 100%, 100%)',
+        ],
+        [
+            'name' => 'dark-muted',
+            'label' => 'Muted - Text Color (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(220, 28%, 25%)',
+        ],
+        [
+            'name' => 'dark-inverted',
+            'label' => 'Inverted - Text Color (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(220, 14%, 60%)',
+        ],
+        [
+            'name' => 'dark-background',
+            'label' => 'Background - Color (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(0, 0%, 5%)',
+        ],
+        [
+            'name' => 'dark-background-secondary',
+            'label' => 'Background - Secondary Color (Dark)',
+            'type' => 'color',
+            'default' => 'hsl(0, 0%, 10%)',
+        ],
+    ],
+];
