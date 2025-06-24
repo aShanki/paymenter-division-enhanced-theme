@@ -20,7 +20,19 @@
         </div>
         <div class="my-4">
             <article class="prose dark:prose-invert max-w-none leading-relaxed text-left">
-                {!! $product->description !!}
+                <div x-data="{ expanded: false }" class="relative">
+                    <div x-show="!expanded" class="overflow-hidden" style="display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical;">
+                        {!! $product->description !!}
+                    </div>
+                    <div x-show="expanded">
+                        {!! $product->description !!}
+                    </div>
+                    <button 
+                        @click="expanded = !expanded" 
+                        class="text-primary hover:text-primary/80 text-sm font-medium mt-2 transition-colors"
+                        x-text="expanded ? 'Show less' : 'Read more'"
+                    ></button>
+                </div>
             </article>
         </div>
     </div>

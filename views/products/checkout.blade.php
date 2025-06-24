@@ -6,9 +6,21 @@
                 <img src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}" class="max-w-40 h-fit">
             @endif
             <div class="w-full">
-                <div class="max-h-48 overflow-y-auto bg-background-secondary/50 p-4 rounded-lg border border-neutral/20">
+                <div class="bg-background-secondary/50 p-4 rounded-lg border border-neutral/20">
                     <article class="prose dark:prose-invert prose-sm max-w-none leading-relaxed">
-                        {!! $product->description !!}
+                        <div x-data="{ expanded: false }" class="relative">
+                            <div x-show="!expanded" class="overflow-hidden" style="display: -webkit-box; -webkit-line-clamp: 10; -webkit-box-orient: vertical;">
+                                {!! $product->description !!}
+                            </div>
+                            <div x-show="expanded">
+                                {!! $product->description !!}
+                            </div>
+                            <button 
+                                @click="expanded = !expanded" 
+                                class="text-primary hover:text-primary/80 text-sm font-medium mt-2 transition-colors"
+                                x-text="expanded ? 'Show less' : 'Read more'"
+                            ></button>
+                        </div>
                     </article>
                 </div>
             </div>
